@@ -1,0 +1,121 @@
+.container{
+        position:fixed;
+        height:100%;
+        width:100%;
+        z-index:10;
+        background-color:rgba(80, 80, 80, 0.4);
+        display:grid;
+        place-items:center;
+        &_wrapper{
+            height: 90%;
+            width:27%;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            gap:1%;
+            &_heading{
+                height:10%;
+                width:100%;
+                background-color: cadetblue;
+                color: white;
+                display:flex;
+                align-items: center;
+                justify-content:flex-start;
+                gap: 3%;
+                font-size: 20px;
+                &_backIcon{
+                  height: 30px;
+                  width:30px;
+                  filter:brightness(50%) invert(1);
+                  cursor: pointer;
+                }
+            }
+            &_inputSection{
+                height: 55%;
+                width:calc(100% - 30px);
+                // background-color: red;
+                padding:15px;
+                &_texts{
+                  display:flex;
+                  justify-content: flex-end;
+                  gap: 20px;
+                  
+                }
+                &_segmentContainer{
+                  border:3px solid blue;
+                  width:calc(100% - 20px);
+                  height: calc(45% - 25px);
+                  margin-top: 15px;
+                  padding: 10px;
+                  display: flex;
+                  flex-direction: column;
+                  gap: 4px;
+                  overflow-x: hidden;
+                  overflow-y: auto;
+                  &_dropDownWrapper{
+                    display: flex;
+                    gap:5px;
+                  }
+                  &_delImg{
+                  height: 30px;
+                  width:30px;
+                  cursor: pointer;
+                  }
+                  &_dropDown{
+                    width:90%;
+                    height:30px;
+                  }
+                }
+                &_addNewSec{
+                  height: 10%;
+                  width: calc(100% - 15px);
+                  display: flex;
+                  flex-direction: column;
+                  gap: 13px;
+                  padding-left: 15px;
+                  &_dropDown{
+                    width:97%;
+                    height:30px;
+                  }
+                }
+            }
+            &_buttonSection{
+                height: 9%;
+                width:calc(100% - 10px);
+                background-color:#999999;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                padding-left: 10px;
+                margin-top:auto;
+                &_saveBtn{
+                  background-color: green;
+                  color:#cdece5;
+                  padding: 10px;
+                  border: none;
+                  border-radius: 4px;
+                  cursor: pointer;
+                }
+                &_cancelBtn{
+                  background-color:white;
+                  color:red;
+                  padding: 10px;
+                  border: none;
+                  border-radius: 4px;
+                  width:75px;
+                  cursor: pointer;
+                }
+            }
+
+        }
+  }
+  .inputFieldDiv{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    &_inputField{
+      height:12px;
+      padding: 10px;
+    }
+  }
+  
